@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    *,
+    *:before,
+    *:after{
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: myFirstFont;
+    }
+    
+    header{
+      color: #888;
+    }
+
+    header h1{
+      font-size: 30px;
+    }
+
+    p {
+     font-family: raleway;
+     color:'black';
+     font-weight: bold;
+
+
+    }
+
+    h2:after {
+    content:' ';
+    display:block;
+    margin-top: 10px;
+    border:2px solid #d0d0d0;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+    @font-face {
+      font-family: myFirstFont;
+      src: url(slkscre.ttf);
+    }
+
+    @font-face {
+      font-family: raleway;
+      src: url(raleway.ttf);
+    }
+
+    .highlightme:hover {
+      color: orange;
+    }
+
+    .container{
+      margin: 0 auto;
+    }
+    #content-small{
+      height: 50%;
+      text-align: center;
+      padding: 18px;
+      margin-left: 15px;
+      color: #696969 ;
+      
+    }
+
+    #content1{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 350px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+    #contente{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 400px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+    #content2{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 550px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+    #content3{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 450px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+    #content3 .viz-2-controls{
+      color: steelblue;
+      font-size: 15px;
+      border: 2px solid #d3d3d3;
+      padding: 10px;
+
+    }
+
+    #content4{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 500px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+     #content4 .viz-4-controls{
+      color: steelblue;
+      font-size: 15px;
+      border: 2px solid #d3d3d3;
+      padding: 10px;
+
+    }
+
+    #sidebar{
+
+      float: right;
+      margin-top: 40px;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebart{
+      float: right;
+      margin-top: 40px;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebare{
+      float: right;
+      margin-top: 40px;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar1 .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebar2{
+      margin-top: 40px;
+      float: right;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar2 .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebar3{
+      margin-top: 40px;
+      float: right;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    footer{
+      height: 30px;
+
+      margin-top: 20px;
+      text-align: center;
+      color: #8e8d8d;
+      background: rgba(0, 0, 0, 0.02);
+
+    }
+
+    footer p{
+      margin: 0;
+    }
+
+    .particles-wrapper {
+      box-shadow: 5px 5px 18px #888888;
+      border-radius: 25px;
+      background-color: #ffffff;
+      width: 100%;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="./css/tree-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+</head>
+<body>
+  <script src="https://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script> var gflag = false;</script>
+ 
+  
+
+  <header>
+    <div class="container">
+      <div class="particles-wrapper">
+        <div id="content-small">
+        <h1>What is BlockChain?</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    &nbsp
+    &nbsp
+    &nbsp
+  </div>
+  <div class="container">
+    <div id="sidebar">
+
+       
+        <div id="bezier-demo">
+          
+        </div>
+        <p></p>
+     
+    </div>
+    <div id="content1">
+      <h2> What is a block ? </h2>
+      <p>A block is like a page or a ledger that consist of mainly three components .</p>
+
+      <p>It consists of the data, a hash to protect the data and a previous hash inorder to form a chain of blocks.In the world of cryptocurrency, a block contains more than 500 transactions on average. The average size of a block seems to be 1MB. In Bitcoin Cash ( a hard fork from the Bitcoin blockchain ), the size of a block can go up to 8MB. This enables more transactions to be processed per second.</p>
+    </div>  
+  </div>
+   &nbsp
+  <div class="container">
+    <div id="sidebare">
+      
+          <div id="canvase"></div>
+      
+    </div>
+  <div id="contente">
+      <h2> How is a Block created ?</h2>
+      <p> As we mentioned earlier, a block consists of data. This data could be transactions between users of the block-chain. To understand how a block is created let's imagine that we are miners</p>
+      <p> Transactions taking place in the network are sent to all nodes. Since we are miners we receive these transactions as well. Click <span class="highlightme" onclick="abhiFunc()">"Receive New Transaction"</span> to see a new Transaction added. The limit on number of transactions we will be adding to our block is 5</p>
+
+      <p> Now that we have all our transactions. Click on them to approve them except the last one and then click <span class="highlightme" onclick="disFunc()">"Attempt Block Creation"</span>. Did it fail ? This is because all the transactions in a Block need to be approved and validated by the miner. This ensures valid transactions in the block-chain. Now approve all the last transaction too and click the button. You'll see that a New Block is created</p>
+      <input type="button" style = "font-family: myFirstFont"value = "Receive New Transaction" name="Transaction" onclick="abhiFunc()">
+      <input type="button" style = "font-family: myFirstFont"value = "Attempt Block Creation" name="Block" onclick="disFunc()">
+
+      <p><div id="message" style="color: #006400;"></div></p>
+  </div>
+</div>
+  <div class="container">
+    <div id="sidebar2">
+      
+        <div id="canvas"></div>
+      
+    </div>
+  <div id="content3">
+      <h2> How is a Block approved to get added to the Chain ?</h2>
+      <p> Miner ! You have now validated transactions and created a block. In the background you solved a complex mathematical problem, the goal of which was to find a number known as the "nonce". This was used to create a hash for the block you created. Now we want to verify if the solution to this mathematical problem was correct or not. So we need to ask our fellow Miners. </p>
+
+     
+      <div class = "viz-2-controls">
+        <form>
+            <label for="radius">Radius:</label>
+            <input id="radius" name="radius" value=200>
+
+            <label for="numNodes">Peers in the Network:</label>
+            <input type="text" id="numNodes" name="radius" value=15>
+
+            <input type="button" style = "font-family: myFirstFont"value = "Mine" name="Reset" onclick="draw()">
+        </form>
+        &nbsp
+        <div id='viz-2-response'></div>
+        <svg width="10cm" height="2cm" version="1.1" 
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image id = "myCoin0" display="none" xlink:href="./img/32-done.gif" x="0" y="0" height="100px" width="100px"/>
+        <image id = "myCoin1" display="none" xlink:href="./img/32-done.gif" x="50" y="0" height="100px" width="100px"/>
+        <image id = "myCoin2" display="none" xlink:href="./img/32-done.gif" x="100" y="0" height="100px" width="100px"/>
+        <image id = "myCoin3" display="none" xlink:href="./img/32-done.gif" x="150" y="0" height="100px" width="100px"/>
+        <image id = "myCoin4" display="none" xlink:href="./img/32-done.gif" x="200" y="0" height="100px" width="100px"/>
+        </svg>
+      </div>
+      <p> Try clicking on <span class="highlightme" >"Add Block"</span> in the Next Section. If your block didn't get approved by peers you would not be able to add this block to the Blockchain. You then have to start creating the block all over. If your block got appoved, click the "Add Block" button to add your newly created block to the chain</p>
+      <p style="color : #7f0000;"> *Only once your block is approved by peers, can it get added to chain*</p>
+  </div>
+</div>
+<div class="container">
+    <div id="sidebart">
+      
+        <div id="crypt"></div>
+
+      
+    </div>
+  <div id="content2">
+      
+      <h2> How is a Block-Chain created from a Block ?</h2>
+      <p> Once you have the data you want to include in a block, the SHA-256 algorithm generates a new hash that has to be used for this block, the block then utilizes the hash for the previous block in order to create the chaining effect. </p><p>You can view how this works in the visualization. Click on add block to add a new block. Notice how the new block includes the previous block's hash in it. This chaining is what ensures that the blocks have a sequence to them and also ensures security. For adding your own block, you would have to correct subsequent blocks and therefore making changes to block is extremely difficult in blockchain</p>
+    <p id='goback'></p>
+    </div>
+</div>
+  <div class="container">
+      <div id = "sidebar3">
+          <div id="canvas-last"></div>
+      </div>
+  <div id="content4">
+    <h2> Cryptocurrency : Application of Blockchain </h2>
+      <div class="viz-4-controls">
+        <form>
+           <label> ASIC</label>
+           <p style="font-size: 10px;"> is an integrated circuit customized for a particular use, rather than intended for general-purpose use. In the Cryptocurrency world, ASIC is used for mining bitcoins</p>
+          
+        </form>
+      </div>
+      &nbsp
+      <div class="viz-4-controls">
+        <form>
+           <label> GPU </label>
+           <p style="font-size: 10px;"> is a graphical processing unit. Since it is wat faster at computations than CPU it is preferred to mine cryptocurrencies over CPU
+         
+        </form> 
+      </div>
+      &nbsp
+      <div class="viz-4-controls">
+        <form>
+           <label> CPU </label>
+           <p style="font-size: 10px;"> is a central processing unit. It used to be used to mine bitcoins but with increase in difficulty, it takes up a lot of power and dies out.</p>
+          
+        </form>
+      </div>
+      <p><button type="button" onclick="myfunction()"> Start Mining </button></p>
+
+  </div>
+</div>
+
+
+
+
+</div>
+
+  <footer>
+    <p>Created by Abhinav, Harsh and Yash</p>
+  </footer>
+  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="./js/rAF.js"></script>
+  <script type="text/javascript" src="./js/ResizeSensor.js"></script>
+  <script type="text/javascript" src="./js/sticky-sidebar.js"></script>
+  <script type="text/javascript" src="js/abhinav.js"></script>
+  <script type="text/javascript" src="js/cryptrect.js"></script>
+  <script type="text/javascript" src="js/yash.js"></script>
+  <script type="text/javascript" src="js/approve.js"></script>
+  <script type="text/javascript" src="js/firstviz.js"></script>
+
+  <script type="text/javascript">
+
+
+    /*
+
+    var b = new StickySidebar('#sidebar2', {
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.container',
+      innerWrapperSelector: '.sidebar__inner'
+    });
+
+    var c = new StickySidebar('#sidebar1', {
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.container',
+      innerWrapperSelector: '.sidebar__inner'
+    });*/
+
+
+
+
+  
+  </script>
+</body>
+</html>

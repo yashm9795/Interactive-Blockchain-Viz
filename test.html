@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    *,
+    *:before,
+    *:after{
+      box-sizing: border-box;
+    }
+
+    body{
+      font-family: myFirstFont;
+    }
+    
+    header{
+      color: #888;
+    }
+
+    header h1{
+      font-size: 30px;
+    }
+
+    h2:after {
+    content:' ';
+    display:block;
+    margin-top: 10px;
+    border:2px solid #d0d0d0;
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+}
+
+    @font-face {
+      font-family: myFirstFont;
+      src: url(slkscre.ttf);
+    }
+
+    .container{
+      margin: 0 auto;
+    }
+    #content-small{
+      height: 50%;
+      text-align: center;
+      padding: 18px;
+      margin-left: 15px;
+      color: #696969 ;
+      
+    }
+
+    #content1{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 350px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+    #content2{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 800px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+    #content3{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 500px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+    #content3 .viz-2-controls{
+      color: steelblue;
+      font-size: 15px;
+      border: 2px solid #d3d3d3;
+      padding: 10px;
+
+    }
+
+    #content4{
+
+      padding: 18px;
+      margin-left: 15px;
+      min-height: 600px;
+      color: #696969;
+      width: 700px;
+      font-size: 15px;
+      
+    }
+
+     #content4 .viz-4-controls{
+      color: steelblue;
+      font-size: 15px;
+      border: 2px solid #d3d3d3;
+      padding: 10px;
+
+    }
+
+    #sidebar{
+
+      float: right;
+      margin-top: 40px;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebar1{
+      float: right;
+      margin-top: 40px;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar1 .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebar2{
+      margin-top: 40px;
+      float: right;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    #sidebar2 .sidebar__inner{
+      border-radius: 25px;
+      box-shadow: 5px 10px 18px #888888;
+      border: 2px solid #d3d3d3;
+      position: relative;
+      transform: translate(0, 0);
+      transform: translate3d(0, 0, 0);
+      will-change: position, transform;
+    }
+
+    #sidebar3{
+      margin-top: 40px;
+      float: right;
+      width: 500px;
+      color: #ffbdbd;
+      will-change: min-height;
+    }
+
+    footer{
+      height: 30px;
+
+      margin-top: 20px;
+      text-align: center;
+      color: #8e8d8d;
+      background: rgba(0, 0, 0, 0.02);
+
+    }
+
+    footer p{
+      margin: 0;
+    }
+
+    .particles-wrapper {
+      box-shadow: 5px 5px 18px #888888;
+      border-radius: 25px;
+      background-color: #ffffff;
+      width: 100%;
+      height: 300px;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+
+
+  </style>
+  <link rel="stylesheet" type="text/css" href="./css/tree-style.css">
+  <link href='https://fonts.googleapis.com/css?family=Kalam' rel='stylesheet'>
+
+</head>
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+  
+
+  <header>
+    <div class="container">
+      <div class="particles-wrapper">
+        <div id="content-small">
+        <h1>What is BlockChain?</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div>
+    &nbsp
+    &nbsp
+    &nbsp
+  </div>
+  <div class="container">
+    <div id="sidebar">
+
+        <div id="test">
+        </div>
+        <p></p>
+     
+    </div>
+    <div id="content1">
+      <h2> What is a block ? </h2>
+      <p>A block is like a page or a ledger that consist of mainly three components .</p>
+
+      <p>It consists of the data, a hash to protect the data and a previous hash inorder to form a chain of blocks.</p>
+    </div>  
+  </div>
+   &nbsp
+  <div class="container">
+    <div id="sidebar1">
+      
+          <div id="canvas1"></div>
+      
+    </div>
+  </div>
+  <div id="content2">
+      <h2> How is a Block-Chain created from a Block ?</h2>
+      <p> Once you have the data you want to include in a block, the SHA-256 algorithm generates a new hash that has to be used for this block, the block then utilizes the hash for the previous block in order to create the chaining effect. </p><p>You can view how this works in the visualization. Click on add block to add a new block. Notice how the new block includes the previous block's hash in it. This chaining is what ensures that the blocks have a sequence to them and also ensures security. For adding your own block, you would have to correct subsequent blocks and therefore making changes to block is extremely difficult in blockchain</p>
+  </div>
+  <div class="container">
+    <div id="sidebar2">
+      
+        <div id="canvas"></div>
+      
+    </div>
+  </div>
+  <div id="content3">
+      <h2> How is a Block approved to get added to the Chain ?</h2>
+      <p> Once a miner has verified the transactions that he listens to on the node. A decision is made on which transactions to include in the block. After this, the miner solves a complex mathematical problem, the goal of which is to find a number known as the "nonce"</p>
+
+     
+      <div class = "viz-2-controls">
+        <form>
+            <label for="radius">Radius:</label>
+            <input id="radius" name="radius" value=200>
+
+            <label for="numNodes">Number of elements:</label>
+            <input type="text" id="numNodes" name="radius" value=100>
+
+            <input type="button" style = "font-family: myFirstFont"value = "MINE" name="Reset" onclick="draw()">
+        </form>
+        &nbsp
+        <div id='viz-2-response'></div>
+        <svg width="10cm" height="2cm" version="1.1" 
+          xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <image id = "myCoin0" display="none" xlink:href="./img/32-done.gif" x="0" y="0" height="100px" width="100px"/>
+        <image id = "myCoin1" display="none" xlink:href="./img/32-done.gif" x="50" y="0" height="100px" width="100px"/>
+        <image id = "myCoin2" display="none" xlink:href="./img/32-done.gif" x="100" y="0" height="100px" width="100px"/>
+        <image id = "myCoin3" display="none" xlink:href="./img/32-done.gif" x="150" y="0" height="100px" width="100px"/>
+        <image id = "myCoin4" display="none" xlink:href="./img/32-done.gif" x="200" y="0" height="100px" width="100px"/>
+        </svg>
+      </div>
+
+  </div>
+  <div class="container">
+      <div id = "sidebar3">
+          <div id="canvas-last"></div>
+      </div>
+  </div>
+  <div id="content4">
+    <h2> Cryptocurrency : Application of Blockchain </h2>
+      <div class="viz-4-controls">
+        <form>
+           <p><label> ASIC</label></p>
+         
+           <p><label> GPU </label></p>
+         
+           <p><label> CPU </label></p>
+        </form>
+        <p><button type="button" onclick="myfunction()"> Start Mining </button></p>
+      </div>
+
+  </div>
+
+
+
+
+</div>
+
+  <footer>
+    <p>Created by Abhinav, Harsh and Yash</p>
+  </footer>
+  <script src='https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js'></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  <script type="text/javascript" src="./js/rAF.js"></script>
+  <script type="text/javascript" src="./js/ResizeSensor.js"></script>
+  <script type="text/javascript" src="./js/sticky-sidebar.js"></script>
+  <script type="text/javascript" src="js/harsh.js"></script>
+  <script type="text/javascript" src="js/yash.js"></script>
+  <script type="text/javascript" src="js/approve.js"></script>
+  <script type="text/javascript">
+
+
+    /*
+
+    var b = new StickySidebar('#sidebar2', {
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.container',
+      innerWrapperSelector: '.sidebar__inner'
+    });
+
+    var c = new StickySidebar('#sidebar1', {
+      topSpacing: 20,
+      bottomSpacing: 20,
+      containerSelector: '.container',
+      innerWrapperSelector: '.sidebar__inner'
+    });*/
+
+
+
+
+    var data = [
+   { "name" : "ABC", "parent":"DEF", "relation": "ghi", "depth": 1 },
+   { "name" : "DEF", "parent":"null", "relation": "null", "depth": 0 },
+   { "name" : "new_name", "parent":"ABC", "relation": "rel", "depth": 2 },
+   { "name" : "new_name2", "parent":"ABC", "relation": "foo", "depth": 2 },
+   { "name" : "Foo", "parent":"DEF", "relation": "rel", "depth": 2 }
+  ];
+
+// *********** Convert flat data into a nice tree ***************
+// create a name: node map
+var dataMap = data.reduce(function(map, node) {
+  map[node.name] = node;
+  return map;
+}, {});
+
+var symbol = d3.svg.symbol(d3.symbolSquare);
+
+// create the tree array
+var treeData = [];
+data.forEach(function(node) {
+  // add to parent
+  var parent = dataMap[node.parent];
+  if (parent) {
+    // create child array if it doesn't exist
+    (parent.children || (parent.children = []))
+      // add node to child array
+      .push(node);
+  } else {
+    // parent is null or missing
+    treeData.push(node);
+  }
+});
+
+// show what we've got
+d3.select('#area1').append('pre')
+    .text(JSON.stringify(treeData, null, '  '));
+
+// ************** Generate the tree diagram  *****************
+var margin = {top: 20, right: 120, bottom: 20, left: 50},
+  width = 560 - margin.right - margin.left,
+  height = 300 - margin.top - margin.bottom;
+  
+var i = 0,
+  duration = 750,
+  root;
+
+var tree = d3.layout.tree()
+  .size([height, width]);
+
+var diagonal = d3.svg.diagonal()
+  .projection(function(d) { return [d.y, d.x]; });
+
+var svg = d3.select("#test").append("svg")
+  .attr("width", width + margin.right + margin.left)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+d3.json("./data/example.json", function(error, DEF) {
+  root = DEF;
+  root.x0 = height / 2;
+  root.y0 = 0;
+
+  function collapse(d) {
+  if (d.children) {
+    d._children = d.children;
+    d._children.forEach(collapse);
+    d.children = null;
+  }
+  }
+  
+  root.children.forEach(collapse);
+  update(root);
+});
+
+d3.select(self.frameElement).style("height", "800px");
+
+function update(source) {
+
+  // Compute the new tree layout.
+  var nodes = tree.nodes(root).reverse(),
+    links = tree.links(nodes);
+
+  // Normalize for fixed-depth.
+  nodes.forEach(function(d) { d.y = d.depth * 50; });
+
+  // Update the nodes…
+  var node = svg.selectAll("g.node")
+    .data(nodes, function(d) { return d.id || (d.id = ++i); });
+
+  // Enter any new nodes at the parent's previous position.
+  var nodeEnter = node.enter().append("g")
+    .attr("class", "node")
+    .attr("transform", function(d) { return "translate(" + source.y0 + "," + source.x0 + ")"; })
+    .on("click", click);
+
+  nodeEnter.append("circle")
+    .attr("r", 1e-6)
+    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeEnter.append("text")
+    .style('font-family','myFirstFont')
+    .attr("x", function(d) { return d.children || d._children ? -10 : 10; })
+    .attr("dy", ".35em")
+    .attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
+    .text(function(d) { return d.name; })
+    .style("fill-opacity", 1e-6)
+    .style("font-size", '10px');
+
+  // Transition nodes to their new position.
+  var nodeUpdate = node.transition()
+    .duration(duration)
+    .attr("transform", function(d) { return "translate(" + d.y + "," + d.x + ")"; });
+
+  nodeUpdate.select("circle")
+    .attr("r", 8)
+    .style("fill", function(d) { return d._children ? "lightsteelblue" : "#fff"; });
+
+  nodeUpdate.select("text")
+    .style("fill-opacity", 1);
+
+  // Transition exiting nodes to the parent's new position.
+  var nodeExit = node.exit().transition()
+    .duration(duration)
+    .attr("transform", function(d) { return "translate(" + source.y + "," + source.x + ")"; })
+    .remove();
+
+  nodeExit.select("circle")
+    .attr("r", 1e-6);
+
+  nodeExit.select("text")
+    .style("fill-opacity", 1e-6);
+
+  // Update the links…
+  var link = svg.selectAll("path.link")
+    .data(links, function(d) { return d.target.id; });
+
+  // Enter any new links at the parent's previous position.
+  link.enter().insert("path", "g")
+    .attr("class", "link")
+    .attr("d", function(d) {
+    var o = {x: source.x0, y: source.y0};
+    return diagonal({source: o, target: o});
+    });
+
+  // Transition links to their new position.
+  link.transition()
+    .duration(duration)
+    .attr("d", diagonal);
+
+  // Transition exiting nodes to the parent's new position.
+  link.exit().transition()
+    .duration(duration)
+    .attr("d", function(d) {
+    var o = {x: source.x, y: source.y};
+    return diagonal({source: o, target: o});
+    })
+    .remove();
+
+  // Stash the old positions for transition.
+  nodes.forEach(function(d) {
+  d.x0 = d.x;
+  d.y0 = d.y;
+  });
+}
+
+// Toggle children on click.
+function click(d) {
+  if (d.children) {
+  d._children = d.children;
+  d.children = null;
+  } else {
+  d.children = d._children;
+  d._children = null;
+  }
+  update(d);
+}
+  </script>
+</body>
+</html>

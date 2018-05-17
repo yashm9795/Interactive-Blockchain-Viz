@@ -1,0 +1,50 @@
+{
+    "name": "Block",
+    "parent": "null",
+    "relation": "null",
+    "depth": 0,
+    "children": [
+      {
+        "name": "Data",
+        "parent": "Block",
+        "relation": "ghi",
+        "depth": 1,
+        "children": [
+          {
+            "name": "This could be anything like a record",
+            "parent": "ABC",
+            "relation": "rel",
+            "depth": 2
+          }
+        ]
+      },
+      {
+        "name": "Hash",
+        "parent": "Block",
+        "relation": "rel",
+        "depth": 1,
+        "children": [
+          {
+            "name": "Generated using a Magic Number called Nonce",
+            "parent": "ABC",
+            "relation": "rel",
+            "depth": 2
+          }
+        ]
+      },
+      {
+        "name": "Prev Hash",
+        "parent": "Block",
+        "relation": "rel",
+        "depth": 1,
+        "children": [
+          {
+            "name": "This helps linking a block to the previous one",
+            "parent": "ABC",
+            "relation": "rel",
+            "depth": 2
+          }
+        ]
+      }
+    ]
+  }
